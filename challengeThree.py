@@ -1,4 +1,5 @@
 from datetime import date
+from math import floor
 
 def inputDate():
     admissionDate = ''
@@ -31,10 +32,14 @@ def inputNumbers():
             income = float(input().replace(',', '.'))
             print('Insira o valor desejado do empréstimo: R$ ', end='')
             loan = float(input().replace(',', '.'))
+
+            if (loan % 2 != 0):
+                raise ValueError('')
+
             print('')
             invalidNumbers = False
-        except:
-            print('Digite valores válidos')
+        except ValueError:
+            print('Insira um valor válido!\n')
     
     return [income, loan]
 
@@ -56,6 +61,8 @@ def inputValues():
 
 def solutionChallengeThree():
     name, admissionDate, income, loan = inputValues()
-    print(admissionDate)
 
-    
+    if ((((date.today() - admissionDate).days) / 365) <= 5):
+        print('Agradecemos seu interesse, mas você não atende os requisitos mínimos do programa.')
+
+    pass

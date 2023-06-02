@@ -1,5 +1,6 @@
 from challengeOne import solutionChallengeOne
 from challengeTwo import solutionChallengeTwo
+from challengeThree import solutionChallengeThree
 
 print('Desafio 1')
 print('list1: [1, 2, 3]  list2: [2, 4]')
@@ -18,4 +19,5 @@ print(solutionChallengeTwo(['DÓ', 'ré', 'Mi', 'fÁ', 'sOl']))
 print('')
 
 print('Desafio 3')
+solutionChallengeThree()
 print('')
