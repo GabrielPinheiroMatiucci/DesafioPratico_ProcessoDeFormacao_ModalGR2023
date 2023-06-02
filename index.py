@@ -1,4 +1,4 @@
-from challenge1 import solutionChallengeOne
+from challengeOne import solutionChallengeOne
 
 print('Desafio 1')
 print('list1: [1, 2, 3]  list2: [2, 4]')
